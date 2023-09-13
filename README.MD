@@ -21,11 +21,9 @@ For details see:
 https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16745
 
 
-In the next step, time series of remote sensing-based vegetation data was linked to field observations (distributed across global drylands) to understand vegetation resistance to crossing aridity thresholds. 
-Going beyond commonly used and purely remote sensing-based proxies of resistance, AridLand provides an expanded picture of vegetation resistance anchored in field observations by including plant and soil properties as well as 
-a comprehensive set of variables relating to climate and topography. 
-Rainfall patterns, elevation, and plant richness, as well as interactions of certain variables with drought legacy were found to play a crucial role in determining resistance to crossing aridity thresholds. 
-The findings of this project hold the potential to support sustainable management practices in drylands as well as to maintain and restore dryland vegetation.
+In the next step, ARIDLAND aims to understand vegetation resistance to crossing aridity thresholds. 
+Time series of remote sensing-based vegetation data was linked to field observations of plant and soil properties (distributed across global drylands) to provide an expanded picture of vegetation resistance.
+Results are positive and a manuscript describing methods and results in detail is currently being finalized for submission in October 2023. 
 
 For details see: 
 
