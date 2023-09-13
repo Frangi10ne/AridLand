@@ -2,7 +2,7 @@
 
 Aridland is a project funded under the ESA CCI postdoctoral fellowship. May 2021 - June 2023 
 
-## Background 
+## Overview 
 
 Increasing aridity is one major consequence of ongoing global climate change and is expected to cause widespread changes in key ecosystem attributes, functions, and dynamics. 
 This is especially the case in naturally water-limited and vulnerable ecosystems, such as drylands. 
