@@ -97,7 +97,7 @@ for pID, th in zip(plot_IDs, list_year_th):
     NDVI_amp_mean_after  = (mean_after  + ampl_after)  / 2
 
     Dist_ratio_list.append(NDVI_amp_mean_before / NDVI_amp_mean_after)
-    NDVI_avg_list.append(NDVI_amp_mean_before)
+    NDVI_avg_list.append(mean_before)
 
 df_field_merged['Dist_ratio'] = Dist_ratio_list
 df_field_merged['NDVI_avg'] = NDVI_avg_list
