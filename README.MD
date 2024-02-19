@@ -22,7 +22,8 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16745
 
 
 In the next step, ARIDLAND aims to understand vegetation resistance to crossing aridity thresholds. 
-Time series of remote sensing-based vegetation data was linked to field observations of plant and soil properties (distributed across global drylands) to provide an expanded picture of vegetation resistance.
+Time series of remote sensing-based vegetation data (NDVI) was linked to field observations of plant and soil properties (distributed across global drylands) to provide an expanded picture of vegetation resistance.
+Scripts to calculate resistance, process the data, run the model averaging, and plot results can be found above including the remote sensing-based NDVI and data from field observations that serve as input data.
 
 For details see: 
 
