@@ -105,7 +105,7 @@ for var, var_leg, a in zip(var_list, var_list_leg, axes_list):
         df_plot['drought_freq_cat'] = np.where(df_plot['drought_freq'] <= 0.5, 'low', "no_data")
         df_plot['drought_freq_cat'] = np.where(df_plot['drought_freq'] > 0.5, 'high', df_plot['drought_freq_cat'])
 
-        df_plot['residuals'] = df_residuals.mean()
+        df_plot['residuals'] = df_residuals.mean().tolist()
         
     else:
         idx = list(var_list_results.values).index(var)
