@@ -50,7 +50,7 @@ X = data_int_sc[['Plant_rich', 'NDVI_avg', 'RWC', 'Clay_silt', 'pH_pH', 'Total_P
 
 function_dict = {'dep_var': [], 'predictor': [], 'predictor_len': [], 'r-squared': [], 'r-squared_adj': [], 'bic': []}
 
-iter_range = np.arange(4, 6)
+iter_range = np.arange(4, 11)
 
 today = date.today()
 print(today.strftime("%d/%m/%Y"))
