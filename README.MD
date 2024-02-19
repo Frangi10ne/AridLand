@@ -23,8 +23,7 @@ https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.16745
 
 In the next step, ARIDLAND aims to understand vegetation resistance to crossing aridity thresholds. 
 Time series of remote sensing-based vegetation data was linked to field observations of plant and soil properties (distributed across global drylands) to provide an expanded picture of vegetation resistance.
-Results are positive and a manuscript describing methods and results in detail is currently being finalized for submission in October 2023. 
 
 For details see: 
 
-*** Manuscript currently in preparation
+Manuscript currently available as preprint: https://www.researchsquare.com/article/rs-3498126/v1
