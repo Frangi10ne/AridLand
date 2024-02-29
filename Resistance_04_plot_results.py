@@ -57,28 +57,41 @@ data_int_sc = data_int.copy()
 data_int_sc[numeric_cols] = data_int_sc[numeric_cols].apply(stats.zscore)
 
 # ----- PLOT RESULTS ----- #
-# comment/ uncomment which variables will be plotted
 
-var_list        = ['Plant_rich', 'TON', 'Total_P_log', 'Clay_silt', 'pH_pH', 'NDVI_avg', 'BS_Tst', 'RWC']
-var_list_leg    = ['Plant richness', 'Nitrogen', 'Phosphorus', 'Soil texture', 'pH value', 'Average NDVI', 'Bare soil fraction', 'Relative woody cover']
+var_list     = ['Plant_rich', 'NDVI_avg', 'cheight', 'BS_Tst', 'RWC',
+                'precip_drop', 'precip_std', 'temp_std', 'ARIDITY', 'drought_freq', 
+                'Clay_silt', 'TON', 'Total_P_log', 'pH_pH', 'slope_log', 'elevation']
 
-#var_list        = ['precip_drop', 'precip_std', 'temp_std', 'ARIDITY', 'drought_freq', 'slope_log', 'elevation','cheight']
-#var_list_leg    = ['Precipitation\ndifference', 'Precipitation\nvariability', 'Temperature\nvariability', 'Aridity', 'Drought frequency', 'Slope','Elevation', 'Canopy height']
+var_list_leg = ['Plant richness', 'Average NDVI', 'Canopy height', 'Bare soil fraction', 'Relative woody cover',
+                'Precipitation\ndifference', 'Precipitation\nvariability', 'Temperature\nvariability', 'Aridity', 'Drought frequency', 
+                'Soil texture', 'Nitrogen', 'Phosphorus', 'pH value', 'Slope', 'Elevation']
 
+save_as_img  = r"*.jpg"
 
-fig = plt.figure(figsize=(35,5))
-gs = gridspec.GridSpec(8, 8)
+fig = plt.figure(figsize=(30,18)) 
+gs = gridspec.GridSpec(3, 6)
 gs.update(wspace=0.03)
-ax1 = plt.subplot(gs[1:8, 0]) 
-ax2 = plt.subplot(gs[1:8, 1], sharey=ax1) 
-ax3 = plt.subplot(gs[1:8, 2], sharey=ax1) 
-ax4 = plt.subplot(gs[1:8, 3], sharey=ax1) 
-ax5 = plt.subplot(gs[1:8, 4], sharey=ax1) 
-ax6 = plt.subplot(gs[1:8, 5], sharey=ax1) 
-ax7 = plt.subplot(gs[1:8, 6], sharey=ax1) 
-ax8 = plt.subplot(gs[1:8, 7], sharey=ax1) 
+gs.update(hspace=0.5)
+ax1 = plt.subplot(gs[0, 0:1]) 
+ax2 = plt.subplot(gs[0, 1:2], sharey=ax1) 
+ax3 = plt.subplot(gs[0, 2:3], sharey=ax1) 
+ax4 = plt.subplot(gs[0, 3:4], sharey=ax1) 
+ax5 = plt.subplot(gs[0, 4:5], sharey=ax1) 
 
-axes_list = (ax1, ax2, ax3, ax4, ax5, ax6, ax7, ax8)
+ax6 = plt.subplot(gs[1, 0:1], sharey=ax1) 
+ax7 = plt.subplot(gs[1, 1:2], sharey=ax1) 
+ax8 = plt.subplot(gs[1, 2:3], sharey=ax1) 
+ax9 = plt.subplot(gs[1, 3:4], sharey=ax1) 
+ax10 = plt.subplot(gs[1, 4:5], sharey=ax1) 
+
+ax11 = plt.subplot(gs[2, 0:1], sharey=ax1) 
+ax12 = plt.subplot(gs[2, 1:2], sharey=ax1) 
+ax13 = plt.subplot(gs[2, 2:3], sharey=ax1) 
+ax14 = plt.subplot(gs[2, 3:4], sharey=ax1) 
+ax15 = plt.subplot(gs[2, 4:5], sharey=ax1) 
+ax16 = plt.subplot(gs[2, 5:6], sharey=ax1) 
+
+axes_list = (ax1, ax2, ax3, ax4, ax5, ax6, ax7, ax8, ax9, ax10, ax11, ax12, ax13, ax14, ax15, ax16)   
 
 for var, var_leg, a in zip(var_list, var_list_leg, axes_list):
 
