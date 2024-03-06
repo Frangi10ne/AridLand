@@ -82,8 +82,9 @@ list_year_th = np.array(df_field_merged['crossed_yr'])
 for pID, th in zip(plot_IDs, list_year_th):
 
     th = th-2000
-    y_before = 5
-    y_after = 2
+    # enter years before and after a threshold was crossed
+    y_before = 
+    y_after = 
 
     pID = str(pID)
 
